@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Marketing - Your Digital Growth Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+
+    </head>
+<body>
+  
+
+    <header class="header">
+        
+        <div class="header-container">
+            <div class="log">
+                <img src="./assests/bull.png" alt="Log" ></img>
+            <h1>𝐁𝐢𝐠  𝐁𝐮𝐥𝐥 𝐒𝐭𝐨𝐜𝐤 𝐌𝐚𝐫𝐤𝐞𝐭𝐢𝐧𝐠</h1>
+        </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#case-studies">Case Studies</a></li> -->
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+
+
+        <style>
+            /* Container styling */
+            .market-ticker-container {
+                display: flex;
+                justify-content: center;
+                overflow: hidden; /* Hide overflow */
+                /* white-space: nowrap; */
+                margin-top: 70px;
+                padding:10px 15px;
+                background-color: #f5f5f5;
+            }
+    
+            /* Individual market item styling */
+            .ticker-item {
+                /* display: inline-block; */
+                width: 250px;
+                /* margin: 0 1px; */
+                /* text-align: center; */
+                text-align: center;
+                margin-top: ;
+                border: 2px rgb(217, 10, 10);
+            }
+            /* Duplicated content for continuous scrolling */
+            .scrolling-content {
+                display: flex;
+            }
+    
+            /* Responsiveness for desktop (no scroll) */
+            @media (min-width: 768px) {
+                .ticker-item {
+                    min-width:250px;
+                    
+                }
+                .scrolling-content {
+                    animation: none; /* Disable scrolling on larger screens */
+                }
+            }
+    
+            /* Scroll only on mobile */
+            @media (max-width: 768px) {
+                .scrolling-content {
+                    display: flex;
+                    animation: scroll 30s linear infinite; /* Continuous scrolling */
+                }
+    
+                /* Scrolling animation without gap */
+                @keyframes scroll {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+    
+            /* Hide scrollbar */
+            .market-ticker-container::-webkit-scrollbar {
+                display: none;
+            }
+            .market-ticker-container {
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                scrollbar-width: none;  /* Firefox */
+            }
+        </style>
+   
+    
+    <!-- Market Ticker Container -->
+    <div class="market-ticker-container">
+    
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_sp500"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "FOREXCOM:SPXUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+            <div class="scrolling-content">
+                <!-- Duplicated content for seamless scrolling -->
+                <!-- First set of items -->
+                <div class="ticker-item">
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_sensex"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "BSE:SENSEX",
+                        "width": "100%",
+                        "colorTheme": "light",
+                        "isTransparent": false,
+                        "locale": "en"
+                        }
+                        </script>
+                    </div>
+                </div>
+    
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_us100"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "FOREXCOM:NSXUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+    
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_eurusd"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "FX:EURUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+    
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_btc"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "COINBASE:BTCUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+    
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_eth"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "COINBASE:ETHUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+    
+            <!-- Duplicated content for seamless scrolling (duplicate the above items) -->
+    
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_sp5002"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "FOREXCOM:SPXUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+    
+            <!-- Add all items again to ensure continuous scrolling without gaps -->
+            <div class="ticker-item">
+                <div class="tradingview-widget-container">
+                    <div id="tradingview_us1002"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                    {
+                    "symbol": "FOREXCOM:NSXUSD",
+                    "width": "100%",
+                    "colorTheme": "light",
+                    "isTransparent": false,
+                    "locale": "en"
+                    }
+                    </script>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <h1>Market Live Chart</h1><br>
+    
+    <div class="tradingview-widget-container">
+        <div id="tradingview_12345"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget({
+                "width": "100%",
+                "height": 400,
+                "symbol": "BSE:SENSEX",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_12345"
+            });
+        </script>
+
+<div class="slider">
+    
+    <div class="slides">
+        <img src="./assests/slide6.jpg" alt="Slide 1"></img>
+        <img src="./assests/slide3.jpg" alt="Slide 2"></img>
+        <img src="./assests/slide4.jpg" alt="Slide 3"></img>
+        <img src="./assests/slide1.jpg" alt="Slide 4"></img>
+        <img src="./assests/slide7.jpg" alt="Slide 5"></img>
+    </div>
+</div><br>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <h1><B>Your Digital Growth Partner</B></h1>
+            <p>We provide innovative share marketing solutions to enhance your online presence and drive growth.</p>
+        </section>
+
+        
+
+        <section id="services" class="section">
+            <h2>Our Services</h2><br>
+
+     <h3><p>→We offer a comprehensive range of share marketing services designed to meet your needs</p></h3><br>
+
+            <ul>
+        <b> <li>  Unlock Your Financial Potential with Our Expert Share Market Insights.</li><br>
+            <li>  Navigate the Stock Market with Confidence  Let Our Experts Guide You.</li><br>
+            <li>  Transform Your Investments with Our Cutting Edge Market Strategies.</li><br>
+            <li>  Maximize Your Returns with Our Proven Share Market Solutions.</li><br>
+            <li>  Experience Market Success with Our Tailored Investment Strategies.</li><br>
+            <li>  Stay Ahead of the Curve Get Real-Time Insights and Expert Analysis.</li><br>
+            <li>  Your Gateway to Smarter Investing Trust Our Share Market Expertise.</li><br>
+            <li>  Invest with Assurance Our Data-Driven Approach Ensures Smart Decisions.</li><br>
+            <li>  Empower Your Portfolio with Our Innovative Market Strategies.</li><br>
+            <li>  Navigate Market Fluctuations with Precision Our Experts Have You Covered.</li></b> 
+            </ul>
+        </section>
+
+        <!-- <video controls autoplay loop muted plays-inline>
+            <source src="video.mp4" type="video/mp4">  
+        </video> -->
+            
+        
+
+        <div id="case1">
+            <section id="case-studies" class="section">
+                <h2>Case Studies</h2>
+                <div class="case-study">
+                    <h2>Case Study 1</h2>
+                    <p><h3>▪️ Comprehensive Market Analysis<br></h3>
+                            ▪️ Action: Conducted an in-depth analysis of market trends, sector performance, and emerging investment opportunities.<br>
+                            ▪️ Outcome: Identified high-growth sectors and stocks with strong potential, providing a detailed report with actionable insights.</p>
+                    <img src="./assests/image4.jpg" alt="Case Study 1"></img>
+                </div>
+                <div class="case-study">
+                    <h2>Case Study 2</h2>
+                    <p><h3>▪️ Customized Investment Strategy</h3>
+                            ▪️ Action: Developed a tailored investment strategy incorporating diversified assets risk management techniques and growth stocks.<br>
+                            ▪️ Outcome: Created a balanced portfolio that aligned with the client's investment goals and risk tolerance..</p>
+                    <img src="./assests/image2.jpg" alt="Case Study 2"></img>
+                </div>
+            </section>
+    
+            <section id="testimonials" class="section">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial">
+                    <h3>John Doe</h3>
+                    <p>"Share Marketing transformed our digital strategy and delivered outstanding results."</p>
+                    <img src="./assests/image3.jpg" alt="John Doe"></img>
+                </div>
+                <div class="testimonial">
+                    <h3>Jane Smith</h3>
+                    <p>"The team's expertise and dedication are unparalleled. Highly recommended!"</p>
+                    <img src="./assests/img.webp" alt="Jane Smith"></img>
+                </div>
+            </section>
+        </div>
+
+        
+
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2><br
+            <p>Get in touch for more information or to schedule a consultation:</p><br>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="Mobible Number" name="Mobile" placeholder="Your Number" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <br>
+            <br>
+            <section id="About" class="section">
+                <h2>About</h2><br>
+            <p> <li>The share market is a platform where investors buy and sell shares of publicly traded companies.</li><br>
+                <li>It plays a crucial role in the economy by providing companies with access to capital and investors with opportunities for growth.</li><br>
+                <li>Understanding market trends, economic indicators, and company performance is essential for making informed investment decisions.</li><br>
+                <li>Investing in the share market can offer potential for high returns, but it also comes with risks.</li><br>
+                <li>Diversification is key spreading investments across different sectors can help mitigate risk.</li><br>
+                <li>Staying informed about global events and market news can significantly impact investment strategies.</li><br>
+                <li>Long-term investing often yields better results than short-term trading, emphasizing the importance of patience.</li><br>
+                <li>The share market is not just for seasoned investors beginners can also start small and grow their portfolios over time.</li></p><br><br>
+            
+            </class>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#case-studies">Case Studies</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+
+                        </ul>
+                    </div>
+            
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://wa.me/your-number" target="_blank" class="fa fa-whatsapp"></a>
+                            <a href="https://www.instagram.com/your-profile" target="_blank" class="fa fa-instagram"></a>
+                            <a href="https://www.facebook.com/your-page"target="_blank" class="fa fa-facebook"></a>
+                            <a href="https://www.youtube.com/your-channel"target="_blank" class="fa fa-youtube"></a>
+                            <a href="https://www.twitter.com/your-page"target="_blank" class="fa fa-twitter"></a>
+                            
+                            
+
+                            <!-- <a href="https://wa.me/your-number" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                          <a href="https://www.instagram.com/your-profile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                           <a href="https://www.facebook.com/your-page" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.youtube.com/your-channel" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Big Bull Marketing. All rights reserved.</p>
+                </div>
+            </footer>
+                                
+         <script  src="./script.js"></script>
+        
+</body>
+</html>
